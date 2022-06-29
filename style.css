@@ -11,15 +11,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body > img {
-    width: 100%;
+body {
+    min-height: 100vh;
+    
+    padding: 20px 60px 20px 123px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background: url('assets/top-image.svg') top left, url('assets/bottom-image.svg') bottom left;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-main {
-    padding: 60px;
-}
-
-main img {
+img {
     width: 45%;
 }
 
@@ -103,23 +110,15 @@ h1 {
     width: 100px;
 }
 
-@media(max-width: 1050px) {
-    body > img {
-        display: none;
-    }
-
-    main {
+@media(max-width: 1100px) {
+    body {
         flex-direction: column-reverse;
+        justify-content: center;
+        padding: 20px;
     }
 
-    main > img {
+    body > img {
         width: 200px;
         margin-bottom: 30px;
-    }
-}
-
-@media(max-height: 500px) {
-    body > img {
-        display: none;
     }
 }
