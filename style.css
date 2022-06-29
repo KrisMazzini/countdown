@@ -19,6 +19,10 @@ main {
     padding: 60px;
 }
 
+main img {
+    width: 45%;
+}
+
 footer {
     margin-top: 46px;
     gap: 31px;
@@ -97,4 +101,25 @@ h1 {
 
 .time-box {
     width: 100px;
+}
+
+@media(max-width: 1050px) {
+    body > img {
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main > img {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-height: 500px) {
+    body > img {
+        display: none;
+    }
 }
