@@ -2,9 +2,9 @@ const formatTime = (time = 0) => time < 10 ? "0" + time : time
 
 const getLaunchDate = () => {
     const date = new Date()
-    date.setDate(date.getDate() + 0) // 8
-    date.setHours(date.getHours() + 0) // 14
-    date.setMinutes(date.getMinutes() + 0) // 47
+    date.setDate(date.getDate() + 8) // 8
+    date.setHours(date.getHours() + 14) // 14
+    date.setMinutes(date.getMinutes() + 47) // 47
     date.setSeconds(date.getSeconds() + 5)
     return date.getTime()
 }
