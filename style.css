@@ -1,0 +1,100 @@
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --transparent-purple: #6C63FFAA;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body > img {
+    width: 100%;
+}
+
+main {
+    padding: 60px;
+}
+
+footer {
+    margin-top: 46px;
+    gap: 31px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 19px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
+#sign-up {
+    width: 160px;
+    height: 46px;
+
+    font-weight: 400;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background-color: var(--purple);
+    color: #FFFFFF;
+
+    transition: all linear 0.2s;
+}
+
+#sign-up:hover {
+    transition: all linear 0.2s;
+    background-color: var(--transparent-purple);
+}
+
+.text {
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text-color);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.time-value {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    color: var(--black);
+    vertical-align: bottom;
+}
+
+.time-name {
+    text-transform: capitalize;
+    color: var(--light-grey);
+}
+
+.time-box {
+    width: 100px;
+}
